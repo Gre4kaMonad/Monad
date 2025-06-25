@@ -1,30 +1,28 @@
 body.custom-bg {
   background: linear-gradient(to bottom, 
-    #211a3d 0%,    /* верх — насыщенный, но не ядовитый фиолет */
-    #1f1937 40%,   /* средний — мягкий, менее яркий */
-    #181526 75%,   /* нижняя часть темнее */
-    #121214 100%   /* самый низ — почти чёрный */
+    #211a3d 0%,    
+    #1f1937 40%,   
+    #181526 75%,   
+    #121214 100%   
   );
   background-attachment: fixed;
   
 }
-/* Для Chrome, Edge и Safari */
 ::-webkit-scrollbar {
   width: 10px;
 }
-
 ::-webkit-scrollbar-track {
-  background: #1e1e2f; /* Тёмный фон трека */
+  background: #1e1e2f; 
   border-radius: 8px;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: linear-gradient(180deg, #5f27cd, #341f97); /* Градиент фиолетовый */
+  background: linear-gradient(180deg, #5f27cd, #341f97); 
   border-radius: 8px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: linear-gradient(180deg, #7d5fff, #5f27cd); /* Светлее при наведении */
+  background: linear-gradient(180deg, #7d5fff, #5f27cd); 
 }
 * {
   scrollbar-width: thin;
@@ -40,23 +38,22 @@ html {
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
-  color: white; /* или другой нужный цвет */
+  color: white; 
 }
-
 .fog-overlay {
   position: fixed;
   top: 0; left: 0;
   width: 100%;
   height: 100%;
   pointer-events: none;
-  background: rgba(255, 255, 255, 0.02); /* лёгкий серый налёт */
+  background: rgba(255, 255, 255, 0.02); 
 }
 .navbar {
   position: fixed;
   top: 20px;
   left: 50%;
   transform: translateX(-50%);
-  background: rgba(0, 0, 0, 0.4); /* полупрозрачный фон */
+  background: rgba(0, 0, 0, 0.4); 
   backdrop-filter: blur(8px);
   -webkit-backdrop-filter: blur(6px);
   height: 60px;
@@ -70,8 +67,6 @@ html {
   width: 90%;
   max-width: 1100px;
 }
-
-
     .logo {
       color: white;
       font-weight: bold;
@@ -122,7 +117,6 @@ html {
   flex-direction: column;
   align-items: center;
 }
-
 .team-title {
   font-size: 36px;
   font-weight: bold;
@@ -130,16 +124,14 @@ html {
   color: white;
   text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.7);
 }
-
 .team-wrapper {
   display: flex;
   justify-content: center;
-  align-items: flex-start; /* размещаем выше центра */
+  align-items: flex-start; 
   min-height: 100vh;
-  padding-top: 100px;  /*смещение вверх от центра */
+  padding-top: 100px;  
   box-sizing: border-box;
 }
-
 .team-container {
   display: flex;
   justify-content: center;
@@ -147,7 +139,6 @@ html {
   flex-wrap: wrap;
   max-width: 1200px;
 }
-
 .column {
   display: flex;
   flex-direction: column;
@@ -165,22 +156,11 @@ html {
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
   cursor: pointer;
 }
-
 .member:hover {
-  background: rgba(123, 97, 255, 0.15); /* фиолетовая подсветка */
+  background: rgba(123, 97, 255, 0.15); 
   transform: translateY(-6px);
   box-shadow: 0 0 16px rgba(123, 97, 255, 0.5), 0 6px 16px rgba(0, 0, 0, 0.4);
 }
-/*.member {
-  background: rgba(0, 0, 0, 0.5);
-  padding: 10px 15px;
-  border-radius: 12px;
-  display: flex;
-  align-items: center;
-  gap: 12px;
-  width: 300px;
-}*/
-
 .avatar {
   width: 48px;
   height: 48px;
@@ -189,18 +169,15 @@ html {
   flex-shrink: 0;
   
 }
-
 .info h3 {
   margin: 0;
   font-size: 16px;
 }
-
 .info p {
   margin: 2px 0 0;
   font-size: 13px;
   color: #ccc;
 }
-
 .twitter-icon {
   margin-left: auto;
   background: black;
@@ -216,7 +193,6 @@ html {
   font-family: Arial, sans-serif;
   transition: background 0.3s;
 }
-
 .twitter-icon:hover {
   background: white;
   color: black;
@@ -228,7 +204,6 @@ html {
   gap: 40px;
   margin-top: 120px;
 }
-
 .event-title {
   font-size: 42px;
   font-weight: bold;
@@ -240,7 +215,6 @@ html {
   margin-bottom: 40px;
   text-align: center;
 }
-
 .event-frame {
   background: linear-gradient(to bottom, #282828, #151515);
   border-radius: 28px;
@@ -259,7 +233,7 @@ html {
   border-radius: 20px;
   width: 100%;
   display: flex;
-  align-items: flex-start; /* !!! Выравниваем по верху */
+  align-items: flex-start; 
   padding: 20px 24px;
   gap: 32px;
   box-sizing: border-box;
@@ -269,16 +243,14 @@ html {
 .event-card.reverse {
   flex-direction: row-reverse;
 }
-
 .event-text {
   flex: none;
   width: 260px;
   font-size: 15px;
   line-height: 1.5;
-  padding: 0; /* !!! Убираем лишний отступ сверху */
+  padding: 0; 
   margin: 0;
 }
-
 .event-text h3 {
   font-size: 24px;
   font-weight: bold;
@@ -287,20 +259,18 @@ html {
   gap: 10px;
   margin-bottom: 14px;
 }
-
 .event-media {
   flex: none;
   width: 630px;
 }
-
 .event-media img,
 .event-media video {
   width: 100%;
   height: auto;
   border-radius: 16px;
   object-fit: cover;
+  
 }
-
 .event-media video::-webkit-media-controls {
   display: none !important;
 }
@@ -338,7 +308,7 @@ html {
 
 .marquee-track {
   display: inline-flex;
-  animation: scroll-marquee 50s linear infinite; /* ⬅️ Медленно */
+  animation: scroll-marquee 50s linear infinite; 
 }
 
 .marquee-item {
@@ -350,7 +320,7 @@ html {
   padding: 14px 0;
 }
 .marquee-item:not(:last-child) {
-  margin-right: 4.5rem; /* ← отступ между элементами */
+  margin-right: 4.5rem; 
 }
 .marquee-item img {
   width: 40px;
@@ -369,11 +339,11 @@ html {
 }
 .partners-title {
   text-align: center;
-  font-size: 36px; /* ~28px */
+  font-size: 36px; 
   font-weight: bold;
   color: white;
-  margin-bottom: 1rem; /* отступ вниз */
-  margin-top: 15rem;    /* отступ вверх */
+  margin-bottom: 1rem; 
+  margin-top: 15rem;    
   letter-spacing: 0.03em;
 }
 .big-text {
@@ -386,13 +356,11 @@ html {
   margin-top: 30px;
   flex-wrap: wrap;
 }
-
 .nft-column {
   display: flex;
   flex-direction: column;
   gap: 20px;
 }
-
 .nft-card {
   background-color: #151020;
   width: 340px;
@@ -406,7 +374,6 @@ html {
   color: white;
   transition: box-shadow 0.3s ease, transform 0.3s ease;
 }
-
 .nft-card:hover {
   box-shadow: 0 0 15px 5px rgba(131, 110, 249, 0.5);
   transform: translateY(-3px);
@@ -424,8 +391,6 @@ html {
   box-shadow: 0 0 15px 5px rgba(131, 110, 249, 0.5);
   transform: translateY(-3px);
 }
-
-
 .nft-footer {
   margin-top: 40px;
   padding: 10px 20px;
@@ -459,7 +424,6 @@ html {
       top: 0;
       left: 0;
     }
-
     .project-logo {
       width: 80px;
       height: 80px;
@@ -483,7 +447,6 @@ html {
       justify-content: center;
       align-items: center;
     }
-
     .event1-card {
       background: #0f0f0f;
       border-radius: 20px;
@@ -494,11 +457,9 @@ html {
       padding: 24px;
       box-sizing: border-box;
     }
-
     .avatar-block {
       text-align: center;
     }
-
     .avatar-block img {
       width: 153px;
       height: 153px;
@@ -507,18 +468,15 @@ html {
       transition: transform 0.3s ease;
       cursor: pointer;
     }
-
     .avatar-block img:hover {
       transform: scale(1.05);
     }
-
     .avatar-name {
       margin-top: 8px;
       font-size: 14px;
-      font-size: 20px; /* Увеличено с 14px до 16px */
+      font-size: 20px; 
       font-weight: 500;
     }
-
     .avatar-name a {
       text-decoration: none;
       color: white;
@@ -528,8 +486,6 @@ html {
     .avatar-name a:hover {
       color: #9b6bff;
     }
-
-    /* Модальное окно */
     .modal {
       position: fixed;
       top: 0;
@@ -542,18 +498,16 @@ html {
       align-items: center;
       z-index: 1000;
     }
-
     .modal img {
       max-width: 90%;
       max-height: 90%;
       border-radius: 20px;
     }
-
     .modal.show {
       display: flex;
     }
     .avatar-block {
-  width: 153px; /* ограничиваем ширину по размеру картинки */
+  width: 153px; 
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -562,9 +516,8 @@ html {
 }
 .event1-card {
   position: relative;
-  overflow: hidden; /* чтобы эффект не выходил за границы */
+  overflow: hidden; 
 }
-
 .event1-card::before {
   content: "";
   position: absolute;
